@@ -27,10 +27,16 @@ function display()
         ap = "AM";
     }
 
-    full_time = hours + ":" + minutes + ":" + seconds + ap;
+    full_time = hours + ":" + minutes + ap;
     document.getElementById("time").innerHTML = full_time;
 }
 setInterval(display, 1000);
+
+function setQuote()
+{
+    document.getElementById("quote").innerHTML = "a";
+    document.getElementById("quote_name").innerHTML = "a";
+}
 
 function setCookie()
 {
