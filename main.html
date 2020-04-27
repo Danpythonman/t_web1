@@ -5,9 +5,23 @@
         <link href="main.css" rel="stylesheet" type="text/css" />
     </head>
     <body onload="display(); onload=checkCookie();">
-        <p id="time"></p>
-        <p>Welcome</p>
-        <p id="name"></p>
+
+        <div id="central_message">
+            <div id="time_div">
+                <div id="time"></div>
+            </div>
+
+            <div id="message_div">
+                <div class="message" id="welcome">Welcome,&nbsp;</div>
+                <div class="message" id="name"></div>
+            </div>
+
+            <div id="quote_div">
+                <p id="quote"></p>
+                <p id="quote_name"></p>
+            </div>
+        </div>
+
         <script src="main.js"></script>
     </body>
 </html>
