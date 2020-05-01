@@ -85,3 +85,25 @@ function checkCookie()
         document.getElementById("name").innerHTML = name;
     }
 }
+
+async function loadData()
+{
+    let api_response = await fetch("https://quotes.rest/qod?category=inspire");
+    let api_data = await api_response.json();
+
+    let quote_o = api_data.contents.quotes[0]
+
+    document.getElementById("quote").innerHTML = quote_o.quote;
+    document.getElementById("author").innerHTML = quote_o.author;
+    // return api_data.contents.quotes[0];
+}
+
+/*
+function getData(user_data)
+{
+    let quote_o = getData();
+    console.log(quote_o);
+    document.getElementById("quote").innerHTML = quote_o.quote;
+    document.getElementById("author").innerHTML = quote_o.author;
+}
+*/
