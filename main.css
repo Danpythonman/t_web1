@@ -3,8 +3,10 @@ body {
 }
 
 #central_message {
-    top: 50%;
+    position: absolute;
+    top: 70%;
     left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 #time_div {
@@ -29,6 +31,6 @@ body {
 .message {
     color: white;
     font-family: Arial;
-    font-size: 100px;
+    font-size: 70px;
     font-weight: 1000;
 }
