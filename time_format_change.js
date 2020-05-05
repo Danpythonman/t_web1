@@ -7,17 +7,13 @@ function changeFormat()
      * current_format == 1 means AM/PM format
     */
 
-    // Get the variable and change it
-    var current_format = localStorage.getItem("time_format");
-    if (current_format == 1)
+    // Check the variable and change it
+    if (localStorage.getItem("time_format") == 1)
     {
-        current_format = 0;
+        localStorage.setItem("time_format", 0);
     }
     else
     {
-        current_format= 1;
+        localStorage.setItem("time_format", 1);
     }
-
-    // Store the variable back
-    localStorage.setItem("time_format", current_format);
 }
