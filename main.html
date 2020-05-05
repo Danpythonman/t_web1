@@ -4,24 +4,37 @@
         <title>Inspiration</title>
         <link href="main.css" rel="stylesheet" type="text/css" />
     </head>
-    <body onload="display(); onload=loadData();">
+    <body onload="display(); onload=checkCookie(); onload=loadData()">
 
-        <div id="central_message">
-            <div id="time_div">
-                <div id="time"></div>
+        <button id="settings" onclick="toggleSettings()">Settings</button>
+            <div id="setting_bars">
+                <button id="change_name"
+                    onclick="setCookie()">Change Name</button>
+                <button id="change_time_format"
+                    onclick="changeFormat()">Change Time Format</button>
             </div>
 
-            <div id="message_div">
-                <div class="message" id="welcome">Welcome,&nbsp;</div>
-                <div class="message" id="name"></div>
+        <div class="main_message" id="central_message">
+            <div class="main_message" id="time_div">
+                <div class="main_message" id="time"></div>
             </div>
 
-            <div id="quote_div">
-                <p id="quote"></p>
-                <p id="author"></p>
+            <div class="main_message" id="message_div">
+                <div class="main_message" id="welcome">Welcome,&nbsp;</div>
+                <div class="main_message" id="name"></div>
+            </div>
+
+            <div class="main_message" id="quote_div">
+                <p class="main_message" id="quote">quos</p>
+                <p class="main_message" id="author">quos</p>
             </div>
         </div>
 
-        <script src="main.js"></script>
+        <script src="cookie.js"></script>
+        <script src="display_time.js"></script>
+        <script src="settings.js"></script>
+        <script src="time_format_change.js"></script>
+        <script src="get_quote.js"></script>
+        <script src="close_settings.js"></script>
     </body>
 </html>
