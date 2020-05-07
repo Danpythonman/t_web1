@@ -2,6 +2,8 @@
 
 async function loadImage()
 {
+    /** Get image, currently from an API from NASA */
+
     let api_response = await fetch("https://api.nasa.gov/planetary/apod?api_key=CwwLr9mGQQqVuWQ2io2iB0MmKsprKH37ITgAMgcl");
     let api_data = await api_response.json();
 
