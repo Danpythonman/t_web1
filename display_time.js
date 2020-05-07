@@ -1,7 +1,11 @@
 /** Displays and updates the time */
 
-// This variable, stored in the user's browser, controls 24h vs AM/PM format
-localStorage.setItem("time_format", 1);
+// time_format is stored in the user's browser, controls 24h vs AM/PM format
+// Set it to AM/PM if it does not already have a value
+if (localStorage.getItem("time_format") == undefined)
+{
+    localStorage.setItem("time_format", 1);
+}
 
 function display()
 {
