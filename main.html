@@ -4,8 +4,10 @@
         <title>Inspiration</title>
         <link href="main.css" rel="stylesheet" type="text/css" />
     </head>
+
     <body onload="display(); onload=checkCookie(); onload=loadData();
-        onload=loadImage()">
+        onload=loadImage(); onload=loadNotes()">
+    <!-- body onload="display(); onload=checkCookie(); onload=loadNotes();" -->
 
         <button id="settings" onclick="toggleSettings()">Settings</button>
             <div id="setting_bars">
@@ -31,6 +33,19 @@
             </div>
         </div>
 
+        <div id="todo_list">
+            <button id="close_list" onclick="closeList()">x</button>
+
+            <div id="notes_container">
+                <ul id="note_list"></ul>
+            </div>
+
+            <input type="text" id="todo_input">
+            <button id="add_item" onclick="addItem()"></button>
+            <p id="todo_title">To-do List</p>
+        </div>
+        <button id="todo_button" onclick="displayList()">To-do</button>
+
         <script src="cookie.js"></script>
         <script src="display_time.js"></script>
         <script src="settings.js"></script>
@@ -38,5 +53,8 @@
         <script src="get_quote.js"></script>
         <script src="close_settings.js"></script>
         <script src="get_image.js"></script>
+        <script src="delete_note.js"></script>
+        <script src="to_do.js"></script>
+        <script src="initialize_list.js"></script>
     </body>
 </html>
