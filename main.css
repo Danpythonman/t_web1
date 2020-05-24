@@ -6,14 +6,16 @@ body {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: white;
+    background-color: transparent;
     height: 50px;
     width: 100px;
     border: none;
+    color: white;
+    font-size: 15px;
 }
 
 #settings:hover {
-    background-color: lightgrey;
+    color: lightgrey;
 }
 
 #setting_bars {
@@ -85,4 +87,99 @@ body {
 
 #author {
     text-align: right;
+}
+
+#todo_button {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    font-size: 15px;
+}
+
+#todo_button:hover {
+    color: lightgrey;
+}
+
+#todo_title {
+    position: absolute;
+    top: 1px;
+    left: 10px;
+    color: white;
+    font-family: Arial;
+}
+
+#todo_list {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    height: 400px;
+    width: 450px;
+}
+
+#todo_input {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    height: 25px;
+    width: 375px;
+}
+
+#add_item {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    height: 30px;
+    width: 30px;
+}
+
+#close_list {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+#notes_container {
+    position: absolute;
+    bottom: 50px;
+    right: 15px;
+    height: 300px;
+    width: 460px;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 10px;
+}
+
+#note_list {
+    color: white;
+    list-style-type: none;
+}
+
+.delete_note {
+    border: none;
+    padding: 5px 8px;
+    background-color: transparent;
+    color: white;
+}
+
+.delete_note:hover {
+    color: lightgrey;
+}
+
+li {
+    font-size: 15px;
 }
